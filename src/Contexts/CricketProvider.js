@@ -2,9 +2,25 @@ import React, { useState } from "react";
 import CricketContext from "./CricketContext";
 
 const CricketProvider = (props) => {
-  let name = "Yash Sharma is the best!";
+    const [cricketer, setCricketer] = useState({
+        name: "Yash Sharma",
+        age: 24,
+        runs: 10080,
+        wickets: 200, 
+    })
+
+    const [actor, setActor] = useState({
+      name: "Hrithik Roshan",
+      age: 50, 
+      movies: 100,
+      awards: 50,
+    })
   return (
-    <CricketContext.Provider value={name}>
+    <CricketContext.Provider value={
+        {
+            cricketer, setCricketer , actor, setActor
+        }
+    }>
       {props.children}
     </CricketContext.Provider>
   );

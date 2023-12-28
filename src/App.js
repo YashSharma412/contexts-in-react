@@ -1,13 +1,16 @@
 import React from "react";
 import Hello from "./Components/Hello";
 import Hi from "./Components/Hi";
-
+import Hey from "./Components/Hey";
 function App() {
   return (
     <div className="App">
       
-        <Hello />
+      <Hello />
+      <hr />
       <Hi />
+      <hr />
+      <Hey />
       <h3>This is the App.js code Use Context concept</h3>
       <p>
         We create a global variable and access and update it in multiple other
@@ -15,7 +18,7 @@ function App() {
       </p>
       <p>
         while using context in a project , it is advisible to have a seperate
-        folder named 'context' similar to the 'components' folder.{" "}
+        folder named 'context' similar to the 'components' folder.
       </p>
       <p>Three steps to creating an object: </p>
       <ol>
